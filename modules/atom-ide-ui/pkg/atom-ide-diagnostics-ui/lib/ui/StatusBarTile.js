@@ -249,22 +249,12 @@ class StatusBarTileComponent extends React.Component<Props> {
         <a
           className={errorClassName}
           onClick={this._onClick}
-          // eslint-disable-next-line nuclide-internal/jsx-simple-callback-refs
-          ref={addTooltip({
-            title: `${errorLabel} error${errorSuffix}`,
-            placement: 'top',
-          })}>
           <Icon icon="nuclicon-error" />
           {errorCount}
         </a>
         <a
           className={warningClassName}
           onClick={this._onClick}
-          // eslint-disable-next-line nuclide-internal/jsx-simple-callback-refs
-          ref={addTooltip({
-            title: `${warningLabel} warning${warningSuffix}`,
-            placement: 'top',
-          })}>
           <Icon icon="nuclicon-warning" />
           {warningCount}
         </a>
